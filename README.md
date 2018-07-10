@@ -136,11 +136,11 @@ String[] program = {
   "MOV Y 20", // this line should be avoided by the jump.
   "MOV Y 10", // set Y to ten
   "ADD X 1",  // add one to X
-  "JLT X Y 10 1", // JLT (Jump if Less Than) go to index 2 if X is less than Y
+  "JLT X Y 1", // JLT (Jump if Less Than) go to index 2 if X is less than Y
 };
 ```
 
-Your program should have a variable `i` that keeps track of what line you're
+Your program should have a variable `line` that keeps track of what line you're
 reading and executing. Use two local method variables `x` and `y` to keep track
 of the values of x and y.
 
